@@ -41,8 +41,8 @@ try:
 except IndexError:
 	skip_headers = 0
 
-i = open( input_file, 'rb' )
-o = open( output_file, 'wb' )
+i = open( input_file, 'r' )
+o = open( output_file, 'w' )
 
 reader = csv.reader( i )
 
